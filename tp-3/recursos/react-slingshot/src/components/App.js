@@ -5,6 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import WelcomePage from './pages/welcome/WelcomePage';
 import NotFoundPage from './pages/notFound/NotFoundPage';
 import AboutPage from './pages/about/AboutPage';
+import AlumnosPage from './pages/alumnos/AlumnosPage';
+
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import './app.scss';
@@ -19,6 +21,7 @@ class App extends React.Component {
           <Switch >
             <Route exact path="/" component={WelcomePage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/alumnos" component={AlumnosPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

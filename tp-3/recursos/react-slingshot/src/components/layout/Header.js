@@ -19,6 +19,8 @@ const Header = () => {
       <div>
           <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
           {' | '} 
+          <NavLink to="/alumnos" activeStyle={activeStyle}>Alumnos</NavLink>
+          {' | '} 
           <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
         </div>
     </div>
