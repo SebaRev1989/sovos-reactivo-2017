@@ -8,7 +8,24 @@ class AlumnosPage extends React.Component {
   constructor(){
     super();
     this.state = {
-      alumnos:[]
+      alumnos:[
+        {
+          "apellido": "Juarez",
+          "nombre": "Marcos",
+          "dni":"12345678",
+          "direccion": "Salta 123",
+          "fechaNac": "1990-8-20",
+          "estado": "Regular"
+        },
+        {
+          "apellido": "Diaz",
+          "nombre": "Juan",
+          "dni": "87654321",
+          "direccion": "Cordoba 456",
+          "fechaNac": "1992-6-10",
+          "estado": "Regular"
+        }
+      ]
     }
   }
   render() {
@@ -16,7 +33,7 @@ class AlumnosPage extends React.Component {
       <div>
         <div>
           <Switch >
-            <Route exact path="/" component={AlumnoListado} />
+            <Route path="/" render={(props) => <AlumnoListado alumnos = {this.state.alumnos} />} />
             <Route path="/form" component={AlumnoForm} />
           </Switch>
         </div>
