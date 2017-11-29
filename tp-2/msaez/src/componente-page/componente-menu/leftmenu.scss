@@ -1,0 +1,41 @@
+.main_nav {
+    width:190px;
+    float: left;
+    margin-left: 10px;
+    height: 100%
+};
+
+.sub_menu {
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 12px;
+    width: auto;
+};
+
+.sub_menu div {
+    background: #99DE00;
+    padding: 5px;
+    color: #fff;
+    width: auto;
+    font-variant: small-caps;
+};
+
+.sub_menu a {
+    background: #fff;
+    color: #666;
+    text-decoration: none;
+    line-height: 1.25em;
+    display: block;
+    padding: 1.25ex 0.5em 1.25ex 0.75em;
+    text-align: left;
+};
+
+.sub_menu a:hover {
+    background: #f9f9f9;
+    color: #666;
+    text-decoration: none;
+    line-height: 1.25em;
+    display: block;
+    padding: 1.25ex 0.5em 1.25ex 0.75em;
+};
+
