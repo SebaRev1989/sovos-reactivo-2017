@@ -30,7 +30,6 @@ class App extends React.Component {
     };
   }
 
-
   handleNewAlumno = (alumno) => {
     console.log(alumno);
     this.setState({

@@ -16,7 +16,7 @@ class AlumnosPage extends React.Component {
           <div>
             <Switch >
               <Route exact path={`${this.props.match.path}/`} render={(props) => <AlumnoListado alumnos={this.props.alumnos}/>}/>}
-              <Route path={`${this.props.match.path}/form`}  component={AlumnoForm} onNewAlumno = {this.handleFormSave} />
+              <Route path={`${this.props.match.path}/form`}  render={(props) => <AlumnoForm onNewAlumno = {this.handleFormSave} />}/>}
             </Switch>
           </div>
         </div>

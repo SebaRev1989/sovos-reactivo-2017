@@ -21,23 +21,22 @@ const Header = () => {
 
   return (
     <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-    <AppBar title="Sovos Reactivo" />
+      <div style={headStyle}>
+        <AppBar title="Sovos Reactivo" />
 
-    <div style={headStyle}>
-      <div>
-          <NavLink exact to="/" activeStyle={activeStyle}>Dashboard</NavLink>
-          {' | '}
-          <NavLink to="/alumnos" activeStyle={activeStyle}>Alumnos</NavLink>
-          {' | '}
-          <NavLink to="/materias" activeStyle={activeStyle}>Materias</NavLink>
-          {' | '}
-          <NavLink to="/profesores" activeStyle={activeStyle}>Profesores</NavLink>
-          {' | '}
-          <NavLink to="/cursado" activeStyle={activeStyle}>Cursado</NavLink>
-          {' | '}
-          <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
-        </div>
-    </div>
+            <NavLink exact to="/" activeStyle={activeStyle}>Dashboard</NavLink>
+            {' | '}
+            <NavLink to="/alumnos" activeStyle={activeStyle}>Alumnos</NavLink>
+            {' | '}
+            <NavLink to="/materias" activeStyle={activeStyle}>Materias</NavLink>
+            {' | '}
+            <NavLink to="/profesores" activeStyle={activeStyle}>Profesores</NavLink>
+            {' | '}
+            <NavLink to="/cursado" activeStyle={activeStyle}>Cursado</NavLink>
+            {' | '}
+            <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
+
+      </div>
     </MuiThemeProvider>
   );
 };
