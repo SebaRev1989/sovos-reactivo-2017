@@ -18,8 +18,9 @@ class AlumnosPage extends React.Component {
   }
 
   handleFormSave = (alumno) => {
-    console.log("alumnos page");
-    this.props.onNewAlumno(alumno);
+    this.setState({
+      alumnos: [...this.state.alumnos, alumno]
+    });
   }
 
   render() {
@@ -28,7 +29,7 @@ class AlumnosPage extends React.Component {
         <div>
           <Switch >
             <Route exact path={`${this.props.match.path}/`} render={() => <AlumnoListado alumnos={this.state.alumnos}/>} />
-            <Route path={`${this.props.match.path}/form`} component={AlumnoForm} onNewAlumno={this.handleFormSave}/>
+            <Route path={`${this.props.match.path}/form`} render={() => <AlumnoForm onNewAlumno={this.handleFormSave}/>}/>
           </Switch>
         </div>
       </div>
