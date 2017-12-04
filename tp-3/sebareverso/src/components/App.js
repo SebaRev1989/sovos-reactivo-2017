@@ -11,7 +11,6 @@ import Header from './layout/Header';
 import Footer from './layout/Footer';
 import './app.scss';
 
-
 class App extends React.Component {
   render() {
     return (
@@ -26,7 +25,6 @@ class App extends React.Component {
           </Switch>
         </div>
         <Footer/>
-        
       </div>
     );
   }

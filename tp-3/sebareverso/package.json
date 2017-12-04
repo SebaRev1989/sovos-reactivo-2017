@@ -1,5 +1,5 @@
 {
-  "name": "tuculegio",
+  "name": "sovos-reactivo-2017",
   "version": "0.1.0",
   "description": "",
   "engines": {
@@ -10,7 +10,7 @@
     "remove-demo": "babel-node tools/removeDemo.js",
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm run start-message",
-    "start": "concurrently -k -r -s first \"npm run test:watch\" \"npm run open:src\" \"npm run lint:watch\"",
+    "start": "concurrently -k -r -s first \"npm run open:src\" \"npm run lint:watch\"",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -27,10 +27,11 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Perro",
+  "author": "Sebastian Reverso",
   "license": "MIT",
   "dependencies": {
     "material-ui": "0.19.4",
+    "material-ui-icons": "1.0.0-beta.17",
     "object-assign": "4.1.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
