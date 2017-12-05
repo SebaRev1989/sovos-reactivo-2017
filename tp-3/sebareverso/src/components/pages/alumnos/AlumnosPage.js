@@ -9,32 +9,27 @@ class AlumnosPage extends React.Component {
     super();
     this.state = {
       alumnos:[
-        {
-          "apellido": "Juarez",
-          "nombre": "Marcos",
-          "dni":"12345678",
-          "direccion": "Salta 123",
-          "fechaNac": "1990-8-20",
-          "estado": "Regular"
-        },
-        {
-          "apellido": "Diaz",
-          "nombre": "Juan",
-          "dni": "87654321",
-          "direccion": "Cordoba 456",
-          "fechaNac": "1992-6-10",
-          "estado": "Regular"
-        }
+        {"apellido": "Juarez", "nombre": "Marcos", "dni": "123456789", "fechaNac": "20-10-1995", "estado": "Regular"},
+        {"apellido": "Diaz", "nombre": "Ana", "dni": "123123123", "fechaNac": "5-7-1993", "estado": "Regular"},
+        {"apellido": "Perez", "nombre": "Lucas", "dni": "987654321", "fechaNac": "2-10-1991", "estado": "Libre"},
+        {"apellido": "Rodriguez", "nombre": "Maria", "dni": "147258369", "fechaNac": "5-9-1989", "estado": "Regular"}
       ]
-    }
+    };
   }
+
+  handleFormSave = (alumno) => {
+    this.setState({
+      alumnos: [...this.state.alumnos, alumno]
+    });
+  }
+
   render() {
     return (
       <div>
         <div>
           <Switch >
-            <Route path="/" render={(props) => <AlumnoListado alumnos = {this.state.alumnos} />} />
-            <Route path="/form" component={AlumnoForm} />
+            <Route exact path={`${this.props.match.path}/`} render={() => <AlumnoListado alumnos={this.state.alumnos}/>} />
+            <Route path={`${this.props.match.path}/form`} render={() => <AlumnoForm onNewAlumno={this.handleFormSave}/>}/>
           </Switch>
         </div>
       </div>

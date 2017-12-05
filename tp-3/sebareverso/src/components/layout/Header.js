@@ -1,30 +1,37 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import AppBar from 'material-ui/AppBar';
+import SelectedField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
 
-const Header = () => {
-  const headStyle = {
-    paddingTop:30,
-    paddingLeft:10,
-    border: '2px dashed red',
-    height: 50
+class Header extends React.Component {
+  state = {
+    value: 1,
   };
 
-  const activeStyle = {
-    padding:3,
-    backgroundColor: 'red' 
-  };
+  handleChange = (evt, index, value) => this.setState({value});
 
-  return (
-    <div style={headStyle}>
+  render() {
+    return (
       <div>
-          <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
-          {' | '} 
-          <NavLink to="/alumnos" activeStyle={activeStyle}>Alumnos</NavLink>
-          {' | '} 
-          <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
+        <div>
+          <AppBar
+            title="Sovos Reactivo - Tuculegio"
+            iconClassNameRight="muidocs-icon-navigation-expand-more">
+          <SelectedField
+            floatingLabelText="Opciones"
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <MenuItem value={1} primaryText={"Home"} containerElement={<NavLink exact to="/" />}/>
+            <MenuItem value={2} primaryText={"Alumnos"} containerElement={<NavLink to="/alumnos" />}/>
+            <MenuItem value={3} primaryText={"About"} containerElement={<NavLink to="/about" />}/>
+          </SelectedField>
+          </AppBar>
         </div>
-    </div>
-  );
-};
+      </div>
+    );
+  }
+}
 
 export default Header;

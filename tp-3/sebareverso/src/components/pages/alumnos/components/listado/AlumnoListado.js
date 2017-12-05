@@ -1,32 +1,45 @@
 import React from 'react';
 import {
-  /*Table,
+  Table,
   TableBody,
   TableHeader,
-  TableHeaderColumn,*/
+  TableHeaderColumn,
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 
-const AlumnoListado = (props) => {
+const AlumnoListado =(props) => {
   return (
     <div>
-      <h2>Listado de Alumno </h2>
-      {props.alumnos.map(item =>
-        <MuiThemeProvider>
+      <h2>Listado de Alumno</h2>
+      <FloatingActionButton mini={true} href={"/alumnos/form"} >
+        +
+      </FloatingActionButton>
+      <Table>
+        <TableHeader>
           <TableRow>
-            <TableRowColumn>{item.apellido}</TableRowColumn>
-            <TableRowColumn>{item.nombre}</TableRowColumn>
-            <TableRowColumn>{item.dni}</TableRowColumn>
-            <TableRowColumn>{item.direccion}</TableRowColumn>
-            <TableRowColumn>{item.fechaNac}</TableRowColumn>
-            <TableRowColumn>{item.estado}</TableRowColumn>
+            <TableHeaderColumn>Apellido</TableHeaderColumn>
+            <TableHeaderColumn>Nombre</TableHeaderColumn>
+            <TableHeaderColumn>DNI</TableHeaderColumn>
+            <TableHeaderColumn>Fecha Nac</TableHeaderColumn>
+            <TableHeaderColumn>Estado</TableHeaderColumn>
           </TableRow>
-        </MuiThemeProvider>
-      )}
+        </TableHeader>
+        <TableBody>
+          {props.alumnos.map(item =>
+            <TableRow>
+              <TableRowColumn>{item.apellido}</TableRowColumn>
+              <TableRowColumn>{item.nombre}</TableRowColumn>
+              <TableRowColumn>{item.dni}</TableRowColumn>
+              <TableRowColumn>{item.fechaNac}</TableRowColumn>
+              <TableRowColumn>{item.estado}</TableRowColumn>
+            </TableRow>
+          )};
+        </TableBody>
+      </Table>
     </div>
   );
-};
+}
 
 export default AlumnoListado;
