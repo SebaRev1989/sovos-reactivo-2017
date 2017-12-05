@@ -9,12 +9,14 @@ import {
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
+import { NavLink } from 'react-router-dom';
 
 
 const AlumnoListado = (props) => {
   return (
     <div>
-      <h2>Listado de Alumno</h2>
+      <h2>Listado de Alumnos</h2>
+      <NavLink to="/alumnos/form">Nuevo Alumno</NavLink>
       <MuiThemeProvider>
         <Table>
           <TableHeader>
