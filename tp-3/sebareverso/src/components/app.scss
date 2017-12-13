@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.buttonStyle {
+  margin: 12px;
+}
+
+.paperStyle {
+  margin: 20px;
+  text-align: center;
+}
