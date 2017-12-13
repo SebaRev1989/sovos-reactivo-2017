@@ -1,0 +1,30 @@
+.alumnoForm {
+  margin-right: auto;
+  margin-top: 25px;
+  font-size: 12px;
+  width: auto;
+  height:  auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.alumnoForm div {
+
+  padding: 5px;
+  color: #fff;
+  width: auto;
+  font-variant: small-caps;
+
+}
+
+.alumnoForm a {
+  width: '100%'
+}
+
+.alumnoForm a:hover {
+  background: #f9f9f9;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.25em;
+  display: block;
+  padding: 1.25ex 0.5em 1.25ex 0.75em;
+}
