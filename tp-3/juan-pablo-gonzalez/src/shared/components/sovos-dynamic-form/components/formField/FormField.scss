@@ -1,0 +1,20 @@
+.form-field__wrapper {
+  display: flex;
+}
+
+.form-field__label {
+  width: 90px;
+  min-width: 90px;
+  font-family: 'Roboto-Regular', Arial;
+  font-size: 8pt;
+  line-height: 30px;
+  padding-left: 10px;
+  user-select: none;
+}
+
+.form-field__input {
+  flex-grow: 1;
+  font-family: 'Roboto-Regular', Arial !important;
+  font-size: 8pt !important;
+  width: 100% !important;
+}

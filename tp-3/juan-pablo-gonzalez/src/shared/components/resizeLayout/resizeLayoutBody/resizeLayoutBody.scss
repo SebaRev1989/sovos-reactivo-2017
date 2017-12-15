@@ -1,0 +1,23 @@
+.layout-body__app-bar {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  align-items: center;
+  box-shadow: none !important;
+}
+
+.layout-body__app-bar div {
+  margin-right: 0 !important;
+}
+
+.layout-body__app-bar button span {
+  color: #fff;
+}
+
+.layout-body__app-bar__left-icon-container {
+  background-color: #fff;
+  display: flex;
+}
+
+.layout-body__app-bar__left-icon-append {
+  flex-grow: 1;
+}

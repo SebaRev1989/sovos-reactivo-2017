@@ -1,0 +1,23 @@
+.drag-source-component__container {
+  display: flex;
+  transition: background-color 100ms;
+}
+
+.drag-source-component__drag-icon {
+  width: 0;
+  overflow: hidden;
+  transition: width 100ms;
+}
+
+.drag-source-component__container:hover {
+  background-color: #f1eff7;
+}
+
+.drag-source-component__container:hover .drag-source-component__drag-icon {
+  width: 24px;
+}
+
+.drag-source-component__children-container {
+  flex-grow: 1;
+  line-height: 25px;
+}

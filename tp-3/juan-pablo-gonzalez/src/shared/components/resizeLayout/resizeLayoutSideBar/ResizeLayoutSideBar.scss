@@ -1,0 +1,6 @@
+.resize-layout-sidebar__container {
+  overflow: hidden;
+  transition: width 290ms, min-width 290ms;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,155 @@
+.sovos-dynamic-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sovos-dynamic-form h5 {
+  font-weight: 400;
+  font-size: 8pt;
+  font-family: 'Roboto-Regular', Arial;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.sovos-dynamic-form__rows {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3px;
+}
+
+.sovos-dynamic-form__rows > .sovos-dynamic-form__dynamic-form-component {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sovos-dynamic-form__dynamic-form-component > .sovos-dynamic-form__rows:last-child {
+  margin-bottom: 0;
+}
+
+.sovos-dynamic-form__panels {
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-left: 10px !important;
+  border-left: 1px solid rgba(33, 33, 33, 0.298039);
+}
+
+.sovos-dynamic-form__dynamic-form-component > .sovos-dynamic-form__panels:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.sovos-dynamic-form__panels > .sovos-dynamic-form__dynamic-form-component {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.sovos-dynamic-form__fields {
+  margin: 5px 0;
+  color: black;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-family: Roboto;
+}
+
+.xs-12 {
+  width: 100%;
+}
+
+.xs-11 {
+  width: 91.6%;
+}
+
+.xs-10 {
+  width: 83.3%;
+}
+
+.xs-9 {
+  width: 75%;
+}
+
+.xs-8 {
+  width: 66.6%;
+}
+
+.xs-7 {
+  width: 58.3%;
+}
+
+.xs-6 {
+  width: 50%;
+}
+
+.xs-5 {
+  width: 41.6%;
+}
+
+.xs-4 {
+  width: 33.3%;
+}
+
+.xs-3 {
+  width: 25%;
+}
+
+.xs-2 {
+  width: 16.6%;
+}
+
+.xs-1 {
+  width: 8.3%;
+}
+
+.xs-offset-11 {
+  margin-left: 91.6%;
+}
+
+.xs-offset-10 {
+  margin-left: 83.3%;
+}
+
+.xs-offset-9 {
+  margin-left: 75%;
+}
+
+.xs-offset-8 {
+  margin-left: 66.6%;
+}
+
+.xs-offset-7 {
+  margin-left: 58.3%;
+}
+
+.xs-offset-6 {
+  margin-left: 50%;
+}
+
+.xs-offset-5 {
+  margin-left: 41.6%;
+}
+
+.xs-offset-4 {
+  margin-left: 33.3%;
+}
+
+.xs-offset-3 {
+  margin-left: 25%;
+}
+
+.xs-offset-2 {
+  margin-left: 16.6%;
+}
+
+.xs-offset-1 {
+  margin-left: 8.3%;
+}
+
+.xs-offset-0 {
+  margin-left: 0;
+}

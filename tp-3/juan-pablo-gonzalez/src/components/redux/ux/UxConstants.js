@@ -1,0 +1,6 @@
+const actionTypes = {
+  RESPONSIVE_DRAWER_TOGGLE_DRAWER_OPEN: 'RESPONSIVE_DRAWER_TOGGLE_DRAWER_OPEN',
+  HIDE_DRAWER: 'HIDE_DRAWER'
+};
+
+export default actionTypes;

@@ -1,0 +1,81 @@
+$borderColor: #ebeef0;
+$darkGray: #7d7d7d;
+$purple: #6f6dbc;
+
+.column-selector__buttons-container {
+  padding: 0 18px 16px;
+  border-bottom: 1px solid $borderColor;
+}
+
+.column-selector__buttons-container > div {
+  margin-right: 8px;
+}
+
+.column-selector__buttons-container > div:last-child {
+  margin-right: 0;
+}
+
+.column-selector__columns-container hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 18px;
+}
+
+.column-selector__columns-container {
+  position: absolute;
+  top: 110px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  overflow: auto;
+}
+
+.column-selector__label {
+  height: 22px;
+  font-size: 15px;
+  width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.column-selector__label_visible {
+  color: $purple;
+}
+
+.column-selector__label_hidden {
+  color: $darkGray;
+}
+
+.column-selector__column-row {
+  margin-bottom: 10px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  white-space: nowrap;
+  padding: 5px 10px 0;
+  height: 35px;
+}
+
+.column-selector__column-row:hover {
+  background-color: #f1eff7;
+}
+
+.column-selector__column-row > div:first-child {
+  flex-grow: 1;
+}
+
+.column-selector__icon-container {
+  width: 16px;
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.column-selector__visible-icon svg {
+  fill: $purple !important;
+}
+
+.column-selector__hidden-icon svg {
+  fill: $darkGray !important;
+}

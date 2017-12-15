@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+}
+
+.search_text {
+  display: flex;
+  align-items: center;
+}
+
+.search_text-enter {
+  opacity: 0.01;
+  transition: width 400ms ease-in;
+}
+
+.search_text-enter.Search_Text-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.search_text-leave {
+  opacity: 1;
+}
+
+.search_text-leave.search_text-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

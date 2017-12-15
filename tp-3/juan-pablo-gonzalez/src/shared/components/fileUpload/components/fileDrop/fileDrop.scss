@@ -1,0 +1,105 @@
+.dragDrop__description--small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dragDrop__description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 11%;
+}
+
+.dragDrop__description__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dragDrop__description__label--textError {
+  color: red;
+  text-align: center;
+  padding: 3%;
+}
+
+.dragDrop__description__itemLeft--small {
+  img {
+    position: relative;
+    background-size: cover;
+    height: 45px;
+    top: 14px;
+    margin: 0 15px;
+    width: 45px;
+  }
+}
+
+.dragDrop__description__label--small {
+  height: 20px;
+  position: relative;
+  right: 25%;
+  top: 30px;
+  width: 135px;
+}
+
+.dragDrop__description__label--textHighlighted {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.dragDrop__description__button--big {
+  padding-top: 10%;
+}
+
+.dragDrop__description__button--small {
+  position: relative;
+  right: 3%;
+  top: 24px;
+  height: 36px;
+
+  button {
+    height: 100%;
+  }
+}
+
+.dragDrop__listHeader {
+  display: flex;
+  justify-content: space-between;
+  left: 2.5%;
+  padding-top: 5%;
+  position: relative;
+  width: 56.5%;
+}
+
+.dragDrop__list {
+  height: 230px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.dragDrop__list--error {
+  height: 180px;
+}
+
+.dragDrop__list__listItem__elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dragDrop__list__listItem__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.dragDrop__list__listItem__button {
+  div span {
+    left: 35px;
+    top: 6px;
+  }
+}
