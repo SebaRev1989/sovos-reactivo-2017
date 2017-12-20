@@ -29,6 +29,11 @@ class AppSideBar extends React.Component {
                     <span>Home</span>
                   </Link>
                 </Menu.Item>
+                <Menu.Item key="2">
+                  <Link to="/users">
+                    <span>Usuarios</span>
+                  </Link>
+                </Menu.Item>
                 <Menu.Item key="3">
                   <Link to="/posts">
                     <span>Posts</span>
